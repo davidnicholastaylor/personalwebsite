@@ -40,7 +40,8 @@ body {
 }
 
 .section-head {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  margin-top: 40px;
   text-align: center;
 }
 .section-head h3 {
