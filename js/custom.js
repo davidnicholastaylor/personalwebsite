@@ -1,3 +1,4 @@
+
 /*-----------------------------------------------------------------------------------
 
     Theme Name: Daniels
@@ -123,10 +124,10 @@ $(function() {
                 items:1
             },
             767:{
-                items:1
+                items:2
             },
             1000:{
-                items:1
+                items:3
             }
         }
     });
@@ -157,32 +158,6 @@ $(window).on("load",function (){
       itemSelector: '.col-md-4'
     });
 
-
-    // isotope
-    $('.tech-gallery').isotope({
-        // options
-        itemSelector: '.tech-items'
-      });
-  
-      var $techgallery = $('.tech-gallery').isotope({
-        // options
-        layoutMode: 'fitRows'
-      });
-  
-      // filter items on button click
-      $('.tech-filtering').on( 'click', 'span', function() {
-  
-          var filterValue = $(this).attr('data-filter');
-  
-          $techgallery.isotope({ filter: filterValue });
-  
-      });
-  
-      $('.tech-filtering').on( 'click', 'span', function() {
-  
-          $(this).addClass('active').siblings().removeClass('active');
-  
-      });
 
     // isotope
     $('.gallery').isotope({
@@ -239,3 +214,4 @@ $(window).on("load",function (){
     // });
 
 });
+
