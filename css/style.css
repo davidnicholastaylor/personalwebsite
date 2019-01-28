@@ -441,7 +441,8 @@ p {
 .portfolio {
   overflow: hidden;
 }
-.portfolio .filtering span {
+.portfolio .filtering span,
+.tech-section .tech-filtering span {
   margin: 0 15px;
   color: #222;
   font-weight: 700;
@@ -450,7 +451,8 @@ p {
   position: relative;
   z-index: 2;
 }
-.portfolio .filtering span:before {
+.portfolio .filtering span:before,
+.tech-section .tech-filtering span:before {
   content: "";
   width: 0;
   height: 2px;
@@ -462,7 +464,8 @@ p {
   transition: all .4s;
   z-index: -1;
 }
-.portfolio .filtering .active:before {
+.portfolio .filtering .active:before,
+.tech-section .tech-filtering .active:before {
   width: 95%;
 }
 .portfolio .items {
@@ -943,6 +946,7 @@ footer p {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 991px) {
   .navbar-default .navbar-nav > li {
     margin: 25px 15px 0;
