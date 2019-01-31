@@ -1,3 +1,4 @@
+
 /**********************************************************************************************
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
                                 General
@@ -614,6 +615,50 @@ h1,h2,h3,h4,h5,h6{
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ***********************************************************************************************/
 
+.social-icon a {
+  margin-right: 1em;
+}
+
+.social-icon a span {
+  font-size: 25px !important;
+}
+
+.carousel-container-desktop {
+  width: 500px;
+  max-height: 300px;
+  min-height: 300px;
+}
+
+.desktop-image {
+  object-fit: cover;
+  object-position: center;
+  max-width: 500px;
+  min-width: 500px;
+  max-height: 300px;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.carousel-container-mobile {
+  width: 300px;
+}
+
+.mobile-image {
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  min-width: 100%;
+  /* margin: 0 auto; */
+  /* width: 300px;
+  max-height: 500px;
+  min-height: 500px; */
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+}
+
 .tech-section {
   overflow: hidden;
 	min-height: 550px;
@@ -655,23 +700,31 @@ h1,h2,h3,h4,h5,h6{
     flex-direction: row-reverse;
 }
 
-.pitem-content {
+.pitem-content-mobile {
     width: 55%;
 }
 
-.pitem-images {
+.pitem-content-desktop {
+    width: 40%;
+}
+
+.pitem-images-mobile {
     width: 35%;
     margin: 1em auto;
 }
 
-.post-img img {
+.pitem-images-desktop {
+    width: 55%;
+}
+
+/* .post-img img {
     object-fit: cover;
     object-position: center;
     max-width: 300px;
     min-width: 300px;
     max-height: 500px;
     min-height: 500px;
-}
+} */
 
 .portfolio-item-links {
     display: flex;
@@ -684,26 +737,36 @@ h1,h2,h3,h4,h5,h6{
 
 @media screen and (max-width: 770px) {
 
-  .pitem-content {
+  .pitem-content-mobile,
+  .pitem-content-desktop {
       width: 90%;
   }
 
-  .pitem-images {
-      width: 90%;
+  .pitem-images-mobile,
+  .pitem-images-desktop {
+      width: 95%;
       margin: 1em auto;
   }
 
-  .post-img img {
-      object-fit: cover;
-      object-position: center;
-      max-width: 300px;
-      min-width: 300px;
-      max-height: 500px;
-      min-height: 500px;
+  .carousel-container-desktop {
+    width: 100%;
+    max-height: 300px;
+    min-height: 300px;
   }
 
-  .owl-carousel {
-      margin: 1em auto;
+  .carousel-container-mobile {
+    width: 100%;
+  }
+
+  .mobile-image {
+    max-width: 100%;
+    min-width: 100%;
+
+  }
+
+  .desktop-image {
+    max-width: 100%;
+    min-width: 100%;
   }
 
   .use-by {
