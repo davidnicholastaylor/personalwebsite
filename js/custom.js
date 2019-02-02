@@ -1,16 +1,3 @@
-
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Daniels
-    Theme URI: http://
-    Description: Portfolio Onepage Template
-    Author: creativotheme
-    Author URI: http://themeforest.net/user/creativotheme
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
-
-
 /* ----------------------------------------------------------------
 
 TABLE OF CONTENTS
@@ -20,9 +7,6 @@ TABLE OF CONTENTS
         + navbar scrolling background
         + progress bar
         + magnificPopup
-        + Owl Carsouel
-            - clients carsouel
-            - blog carsouel
         + stellar
         + countUp
         + Preloader
@@ -104,33 +88,34 @@ $(function() {
     //// === owl carsouel === /////
 
     // clients carsouel
-    $('.clients .owl-carousel').owlCarousel({
-        items: 1,
-        loop:true,
-        autoplay:true,
-        smartSpeed:500
-    });
+    // $('.clients .owl-carousel').owlCarousel({
+    //     items: 1,
+    //     loop:true,
+    //     autoplay:true,
+    //     smartSpeed:500
+    // });
 
 
     // Blog carsouel
-    $('.blog .owl-carousel').owlCarousel({
-        margin: 30,
-        loop:true,
-        autoplay:true,
-        smartSpeed:500,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            767:{
-                items:2
-            },
-            1000:{
-                items:3
-            }
-        }
-    });
+    // $('.blog .owl-carousel').owlCarousel({
+    //     margin: 30,
+    //     loop:true,
+        
+    //     //autoplay:true,
+    //     //smartSpeed:500,
+    //     responsiveClass:true,
+    //     responsive:{
+    //         0:{
+    //             items:1
+    //         },
+    //         767:{
+    //             items:1
+    //         },
+    //         1000:{
+    //             items:1
+    //         }
+    //     }
+    // });
 
 
 	// stellar
@@ -158,6 +143,32 @@ $(window).on("load",function (){
       itemSelector: '.col-md-4'
     });
 
+
+    // isotope
+    $('.tech-gallery').isotope({
+        // options
+        itemSelector: '.tech-items'
+      });
+  
+      var $techgallery = $('.tech-gallery').isotope({
+        // options
+        layoutMode: 'fitRows'
+      });
+  
+      // filter items on button click
+      $('.tech-filtering').on( 'click', 'span', function() {
+  
+          var filterValue = $(this).attr('data-filter');
+  
+          $techgallery.isotope({ filter: filterValue });
+  
+      });
+  
+      $('.tech-filtering').on( 'click', 'span', function() {
+  
+          $(this).addClass('active').siblings().removeClass('active');
+  
+      });
 
     // isotope
     $('.gallery').isotope({
@@ -214,4 +225,3 @@ $(window).on("load",function (){
     // });
 
 });
-
