@@ -788,9 +788,8 @@ h1,h2,h3,h4,h5,h6{
 		font-size: .7em;
   }
 
-  .carousel-container-desktop {
-    height: 100%;
-    max-height: 200px;
-    min-height: 200px;
+  .desktop-image {
+    max-height: 35vh;
+    min-height: 35vh;
   }
 }
