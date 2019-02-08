@@ -736,6 +736,18 @@ h1,h2,h3,h4,h5,h6{
 
 @media screen and (max-width: 770px) and (min-width: 501px) {
 
+  .about {
+    display: flex;
+  }
+  
+  .aboutPic {
+    width: 40%;
+  }
+
+  .aboutContent {
+    width: 50%;
+  }
+
   .pitem-content-mobile {
     width: 45%;
   }
@@ -792,20 +804,29 @@ h1,h2,h3,h4,h5,h6{
 		font-size: .7em;
   }
 
-  .pitem-content-mobile,
-  .pitem-content-desktop {
-      width: 90%;
+  .pitem-content-mobile {
+    width: 90%;
   }
 
+  
   .pitem-images-mobile {
     width: 95%;
     margin: 1em auto;
   }
+
+  .pitem-content-desktop {
+      width: 100%;
+  }
+
   .pitem-images-desktop {
-      width: 95%;
+      width: 100%;
   }
 
   .carousel-container-mobile {
+    width: 100%;
+  }
+
+  .carousel-container-desktop {
     width: 100%;
   }
 
@@ -815,6 +836,7 @@ h1,h2,h3,h4,h5,h6{
   }
 
   .desktop-image {
-    max-width: 95%;
+    max-width: 100%;
+    min-width: 100%;
   }
 }
