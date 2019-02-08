@@ -737,12 +737,16 @@ h1,h2,h3,h4,h5,h6{
 
 @media screen and (max-width: 770px) {
 
-  .pitem-content-mobile,
+  .pitem-content-mobile {
+    width: 50%;
+  }
   .pitem-content-desktop {
       width: 90%;
   }
 
-  .pitem-images-mobile,
+  .pitem-images-mobile {
+    width: 45%;
+  }
   .pitem-images-desktop {
       width: 95%;
       margin: 1em auto;
@@ -755,13 +759,12 @@ h1,h2,h3,h4,h5,h6{
   }
 
   .carousel-container-mobile {
-    width: 100%;
+    width: 40%;
   }
 
   .mobile-image {
     max-width: 100%;
     min-width: 100%;
-
   }
 
   .desktop-image {
@@ -775,7 +778,7 @@ h1,h2,h3,h4,h5,h6{
 
 } 
 
-@media screen and (max-width: 740px) and (min-width: 200px) {
+@media screen and (max-width: 500px) and (min-width: 200px) {
 	.icon-card img {
 		display: block;
 		width: 32px;
@@ -786,6 +789,26 @@ h1,h2,h3,h4,h5,h6{
 		text-align: center;
 		word-wrap: break-word;
 		font-size: .7em;
+  }
+
+  .pitem-content-mobile,
+  .pitem-content-desktop {
+      width: 90%;
+  }
+
+  .pitem-images-mobile,
+  .pitem-images-desktop {
+      width: 95%;
+      margin: 1em auto;
+  }
+
+  .carousel-container-mobile {
+    width: 100%;
+  }
+
+  .mobile-image {
+    max-width: 100%;
+    min-width: 100%;
   }
 
   .desktop-image {
