@@ -624,18 +624,14 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .carousel-container-desktop {
-  width: 600px;
-  max-height: 300px;
-  min-height: 300px;
+  width: 75%;
 }
 
 .desktop-image {
   object-fit: cover;
   object-position: center;
-  max-width: 500px;
-  min-width: 500px;
-  max-height: 300px;
-  min-height: 300px;
+  max-width: 100%;
+  min-width: 100%;
   margin: 0 auto;
 }
 
@@ -705,7 +701,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .pitem-content-desktop {
-    width: 40%;
+    width: 90%;
 }
 
 .pitem-images-mobile {
@@ -714,7 +710,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .pitem-images-desktop {
-    width: 55%;
+    width: 75%;
+    margin-top: 2em;
 }
 
 /* .post-img img {
@@ -735,33 +732,48 @@ h1,h2,h3,h4,h5,h6{
   margin: .5em;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 770px) and (min-width: 501px) {
 
-  .pitem-content-mobile,
-  .pitem-content-desktop {
-      width: 90%;
+  .about {
+    display: flex;
   }
 
-  .pitem-images-mobile,
+  .aboutPic {
+    width: 40%;
+  }
+
+  .aboutContent {
+    width: 50%;
+  }
+
+  .pitem-content-mobile {
+    width: 45%;
+  }
+
+  .pitem-images-mobile {
+    width: 45%;
+  }
+
+  .pitem-content-desktop {
+      width: 100%;
+  }
+
   .pitem-images-desktop {
-      width: 95%;
+      width: 100%;
       margin: 1em auto;
   }
 
   .carousel-container-desktop {
     width: 100%;
-    max-height: 200px;
-    min-height: 200px;
   }
 
   .carousel-container-mobile {
-    width: 100%;
+    width: 40vw;
   }
 
   .mobile-image {
     max-width: 100%;
     min-width: 100%;
-
   }
 
   .desktop-image {
@@ -775,7 +787,7 @@ h1,h2,h3,h4,h5,h6{
 
 } 
 
-@media screen and (max-width: 740px) and (min-width: 200px) {
+@media screen and (max-width: 500px) and (min-width: 200px) {
 	.icon-card img {
 		display: block;
 		width: 32px;
@@ -786,5 +798,41 @@ h1,h2,h3,h4,h5,h6{
 		text-align: center;
 		word-wrap: break-word;
 		font-size: .7em;
+  }
+
+  .pitem-content-mobile {
+    width: 90%;
+  }
+
+  
+  .pitem-images-mobile {
+    width: 95%;
+    margin: 1em auto;
+  }
+
+  .pitem-content-desktop {
+      width: 100%;
+  }
+
+  .pitem-images-desktop {
+      width: 100%;
+  }
+
+  .carousel-container-mobile {
+    width: 100%;
+  }
+
+  .carousel-container-desktop {
+    width: 100%;
+  }
+
+  .mobile-image {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .desktop-image {
+    max-width: 100%;
+    min-width: 100%;
   }
 }
